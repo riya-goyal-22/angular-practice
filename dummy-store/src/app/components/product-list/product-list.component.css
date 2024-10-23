@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns with equal width */
+    gap: 1rem; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.button {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+.button button {
+    background-color: rgb(89, 136, 89);
+    border: none;
+    padding:0.7rem;
+    color:whitesmoke;
+    font-size: 1rem;
+    margin: 0.7rem;
+}
+
+.button button:hover {
+    background-color: rgb(119, 159, 119);
+}

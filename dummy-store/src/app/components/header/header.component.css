@@ -1,0 +1,21 @@
+.image img {
+    width:3rem;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(180, 165, 182);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 0rem;
+    margin-bottom: 2rem;
+    min-width: 360px;
+    color:black;
+    font-size: 1.5rem;
+}
+
+

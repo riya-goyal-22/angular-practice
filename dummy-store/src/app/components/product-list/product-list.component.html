@@ -1,0 +1,23 @@
+<div class = "button">
+    <div *appCustomDirective = "service.isAdmin()">
+        <button  
+        routerLink = "product/add"
+        >
+        Add Product
+        </button>
+    </div>
+    <div>
+        <button (click) = "toggle()">
+            Toggle account
+        </button>
+    </div>
+</div>
+<div class = "container">
+@for (product of service.products(); track $index) {
+        <app-product 
+        [image] = "product.images[0]" 
+        [price] = "product.price" 
+        [title] = "product.title" 
+        [id] = "product.id" />
+    }
+</div>

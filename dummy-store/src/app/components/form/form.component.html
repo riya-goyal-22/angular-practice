@@ -1,0 +1,90 @@
+<form [formGroup] = "form" (ngSubmit) = "onSubmit()">
+    <h2>Welcome</h2>
+    @if (isEdit) {
+        <p>We just need a little bit of data from you to get you to update a product</p>
+    }@else {
+        <p>We just need a little bit of data from you to get you to add a product</p>
+    }
+    <hr />
+    <div>
+      <div class = "control-row">
+        <div class = "control">
+          <label for = "title">Title</label>
+          <input
+            pInputText
+            name = "title"
+            placeholder = "Enter title"
+            formControlName = "title"
+          />
+        </div>
+   
+        <div class = "control">
+          <label for = "price">Price</label>
+          <p-inputNumber
+            name = "price"
+            mode = "decimal"
+            [maxFractionDigits] = "2"
+            formControlName = "price"
+          />
+        </div>
+        <div class = "control">
+          <label for = "price">Description</label>
+          <input
+            pInputText
+            name = "description"
+            placeholder = "Enter Description"
+            formControlName = "description"
+          />
+        </div>
+        <div class = "control">
+          <label for = "price">CategoryId</label>
+          <p-inputNumber
+            id = "last-name"
+            name = "categoryId"
+            formControlName = "categoryId"
+          />
+        </div>
+       
+      </div>
+   
+    </div>
+    <fieldset formArrayName = "images">
+      <legend>Upload Image</legend>
+      <div class = "control">
+        <input
+          pInputText
+          id = "img1"
+          name = "img1"
+          formControlName = "0"
+        />
+        <label>Image 1</label>
+      </div>
+   
+      <div class = "control">
+        <input
+          pInputText
+          id = "img2"
+          name = "img2"
+          formControlName = "1"
+        />
+        <label>Image 2</label>
+      </div>
+   
+      <div class = "control">
+        <input
+          pInputText
+          id = "img3"
+          name = "img3"
+          formControlName = "2"
+        />
+        <label for="google">Image 3</label>
+      </div>
+    </fieldset>
+   
+    <p-button
+      label = "Submit" 
+      icon = "pi pi-check" 
+      type = "submit"
+      styleClass = "custom-button"
+      />
+  </form>

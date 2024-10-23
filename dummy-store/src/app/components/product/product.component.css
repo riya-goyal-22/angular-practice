@@ -1,0 +1,43 @@
+
+.card{
+    flex-basis: 20%;
+    background-color: rgb(243, 243, 243);
+    margin:1%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+}
+
+.card-elements {
+    margin-bottom: 0.5rem;
+}
+
+#imgCard {
+   height: 20em;
+}
+
+.image {
+    width: 100%;
+    min-width: 100px;
+}
+
+.button button{
+    background-color: rgb(153, 120, 147);
+    border:none;
+    padding: 0.7rem;
+    color:whitesmoke;
+    font-size: medium;
+    border-radius: 1%;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#delete {
+    background-color: rgb(190, 112, 112);  
+}
